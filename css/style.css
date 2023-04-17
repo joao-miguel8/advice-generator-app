@@ -21,8 +21,10 @@ body {
   background: var(--neutral02);
   max-width: 400px;
   border-radius: 10px;
-  padding: 24px 24px 0px 24px;
+  padding: 24px 24px 0 24px;
   margin: 100px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .advice-inner-content-container {
@@ -58,11 +60,13 @@ body {
 .generate-new-advice {
   padding: 12px 14px;
   position: relative;
-  top: 20px;
-  left: 44%;
+  top: 24px;
   border-radius: 100px;
   background: var(--primary02);
+  align-self: center;
 }
+
+
 
 .generate-new-advice img {
   width: 20px;
@@ -70,8 +74,18 @@ body {
 
 /*<<<<<<<<< ADDITIONAL STYLES >>>>>>>*/
 
+
+
 .generate-new-advice:hover {
   background: hsl(150, 83%, 52%);
 }
 
 /*<<<<<<<<< MEDIA QUERIES  >>>>>>>*/
+
+
+@media(max-width: 430px) {
+  .advice-generated {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+}
