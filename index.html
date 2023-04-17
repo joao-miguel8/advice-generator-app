@@ -3,10 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
 
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
+        <!-- font imported: -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../advice-generator-app/css/reset.css" />
+        <link rel="stylesheet" href="../advice-generator-app/css/style.css" />
+        <!-- JS -->
+        <script src="../advice-generator-app/js/main.js" defer></script>
         <title>Frontend Mentor | Advice generator app</title>
 
         <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -23,15 +32,21 @@
     <body>
         <main>
             <section class="advice-container">
-                <span>advice #<span class="advice-number"></span> </span>
-                <!-- Advice #Advice ID goes here -->
-                <p class="advice-generated"></p>
-                "<!-- Advice text goes here -->"
-                <span>"</span>
+                <div class="advice-inner-content-container">
+                    <span class="advice-label">advice<span class="advice-number"></span>#</span>
+                    <!-- Advice #Advice ID goes here -->
+                    <div class="quote-container">
+                        <p class="advice-generated">Lorem ipsum dolor sit amet consectetur adipisidadadadad cdadadadsdad d adsad a sdadadaada dd Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, totam?. Officidaaad a, maxime.dwadawewaeaw</p>
+                    </div>
+
+                    <!-- Advice text goes here -->
+                    <div class="quote-symbol">"</div>
+                </div>
+
                 <button class="generate-new-advice">
                     <img src="../advice-generator-app/images/icon-dice.svg" alt="" />
                 </button>
-                <div class="contribution-container"><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <href href="#">Your Name Here</href></div>
+                <!-- <div class="contribution-container"><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <href href="#">Your Name Here</href></div> -->
             </section>
         </main>
     </body>
