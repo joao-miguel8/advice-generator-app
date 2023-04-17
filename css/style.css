@@ -38,7 +38,7 @@ body {
   color: var(--primary02);
   text-transform: uppercase;
   font-size: .8rem;
-  gap: 5px;
+  
 }
 
 .advice-generated {
